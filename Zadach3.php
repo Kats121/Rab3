@@ -9,9 +9,9 @@ $Result = [];
 
 foreach ($Students as $Student) {
 
-    $Grade = array_sum($Student['grades']) / count(Student['grades']);
-    if ($Grade >= 4) {
-        $Result[$student['name']] = round($Grade, 2);
+    $AvaregeGrade = array_sum($Student['grades']) / count($Student['grades']);
+    if ($AvaregeGrade >= 4) {
+        $Result[$student['name']] = round($AvaregeGrade, 2);
     }
 }
 foreach ($Result as $Name => $Avg) {
